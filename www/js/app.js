@@ -19,7 +19,8 @@ angular.module('smartOrder', [
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      //StatusBar.styleDefault();
+      StatusBar.styleLightContent();
     }
   });
 })
