@@ -6,7 +6,8 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('smartOrder', [
   'ionic', 
-  'smartOrder.controllers'
+  'smartOrder.controllers',
+  'smartOrder.services'
 ])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -59,7 +60,7 @@ angular.module('smartOrder', [
     }
   })
   .state('app.items', {
-    url: '/items',
+    url: '/items/:categoryId',
     views: {
       'menuContent': {
         templateUrl: 'templates/items.html',
@@ -68,11 +69,11 @@ angular.module('smartOrder', [
     }
   })
   .state('app.single', {
-    url: '/items/:itemId',
+    url: '/items/:categoryId/:itemId',
     views: {
       'menuContent': {
         templateUrl: 'templates/item.html',
-        controller: 'ItemCtrl'
+        controller: 'ItemsCtrl'
       }
     }
   });

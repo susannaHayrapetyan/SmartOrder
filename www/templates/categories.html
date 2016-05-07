@@ -1,7 +1,7 @@
-<ion-view view-title="Categories">
+<ion-view view-title="">
 	<ion-content scroll="false">
 	    <div class="row-flex category-list">
-	    	<a ng-repeat="category in categories track by $index" class="col-xs-4 col-sm-3 category-item" href="#/app/items">
+	    	<a ng-repeat="category in categories track by $index" class="col-xs-4 col-sm-3 category-item" href="#/app/items/{{category.id}}">
 	    		<div class="category-item item-bordered vertical-center">
 		    		<i ng-class="category.icon"></i>
 		    		<p>{{category.name}}</p>
