@@ -1,1 +1,48 @@
-/* Empty. Add your own CSS if you like */
+/*469d72   cf5c25*/
+a{
+	text-decoration: none;
+	color: inherit;
+}
+ion-header-bar{
+	background: #469d72 !important;
+}
+ion-header-bar span, ion-header-bar div, ion-header-bar h1{
+	color: white !important;
+}
+button{
+	background: #469d72 !important;
+	color: white !important;
+}
+.vertical-center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.category-item{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.category-item:not(.item-bordered){
+	padding: 5px;
+}
+.category-item.item-bordered{
+	flex: 0.7;
+	transform: translateY(8%);
+	border: 2px solid #469d72;
+	border-radius: 10px;
+	color: #cf5c25;
+}
+.category-item i{
+	flex: 2;
+	/*font-size: 7em;*/
+	font-size: 9.2vh;
+	transform: translateY(25%);
+}
+.category-item p{
+	flex: 1;
+}
+.category-list{
+	padding: 0px 5px;
+	height: 100%;
+}
