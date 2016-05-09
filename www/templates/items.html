@@ -3,6 +3,9 @@
     <ion-list>
       <ion-item ng-repeat="item in items" href="#/app/items/{{categoryId}}/{{item.id}}">
         {{item.name}}
+        <div class="text-right">
+        	{{item.coast}} Դրամ
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>
