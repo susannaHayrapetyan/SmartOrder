@@ -1,5 +1,26 @@
-<ion-view view-title="Playlist">
+<ion-view view-title="Կապուչիտա">
   <ion-content>
-    <h1>աաա</h1>
+    <div class="row-flex item-data">
+	    <div class="col-xs-12 col-sm-6">
+	    	<img src="../img/capuchino.jpg">
+		</div>
+	    <div class="col-xs-12 col-sm-6">
+	    	<h4>Կապուչիտա</h4>
+	    	<p>բնական ընկույզի կապուչինո, շոկոլադե, բալի օշարակ</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-6">
+	    	<button ng-click="orderCount=orderCount-1" ng-init="orderCount=1">-</button>
+	    	<span>{{orderCount}}</span>
+	    	<button ng-click="orderCount=orderCount+1">+</button>
+	    	<p>
+		    	<button class="ion-ios-cart">
+		    		<span> Ավելացնել </span>
+		    	</button>
+	    	</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-6">
+	    	Գումարը՝ {{orderCount*1400}}
+	    </div>
+    </div>
   </ion-content>
 </ion-view>

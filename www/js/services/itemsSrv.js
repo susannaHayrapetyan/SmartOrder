@@ -3,9 +3,9 @@ angular
 .factory('ItemsSrv', function() {
   
   items = [
-    { id: '1', name: 'Ֆրապպե',      image: 'ion-pizza'},
-    { id: '2', name: 'Գլյասսե', image: 'ion-android-restaurant' },
-    { id: '3', name: 'Կապուչիտա',      image: 'ion-ios-nutrition' }
+    { id: '1', name: 'Ֆրապպե',   coast: '700', prepare_time: '4'},
+    { id: '2', name: 'Գլյասսե',    coast: '1000', prepare_time: '7'},
+    { id: '3', name: 'Կապուչիտա', coast: '1400', prepare_time: '12'}
   ];
 
   return {

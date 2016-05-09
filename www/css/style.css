@@ -13,6 +13,9 @@ button{
 	background: #469d72 !important;
 	color: white !important;
 }
+.back-text > .default-title{
+	display: none !important;
+}
 .vertical-center{
 	display: flex;
 	flex-direction: column;
@@ -45,4 +48,18 @@ button{
 .category-list{
 	padding: 0px 5px;
 	height: 90%;
+}
+.row-flex.item-data{
+	margin: 10px 5px;
+}
+.row-flex.item-data > div{
+	text-align: center;
+}
+.row-flex.item-data button{
+	font-size: 20px;
+	margin: 5px;
+}
+.row-flex.item-data button{
+	font-size: 20px;
+	margin: 5px;
 }
