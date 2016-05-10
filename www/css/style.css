@@ -50,10 +50,11 @@ button{
 	height: 90%;
 }
 .row-flex.item-data{
-	margin: 10px 5px;
+	margin: 0px 5px;
 }
 .row-flex.item-data > div{
 	text-align: center;
+	margin: 10px 0px;
 }
 .row-flex.item-data button{
 	font-size: 20px;
@@ -62,4 +63,10 @@ button{
 .row-flex.item-data button{
 	font-size: 20px;
 	margin: 5px;
+}
+.item-img{
+	width: 50%;
+    height: 135px;
+    margin: 0px auto;
+	background: url("../img/capuchino.jpg");
 }
