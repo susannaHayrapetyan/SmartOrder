@@ -14,21 +14,24 @@
 
   <ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
+      <h1 class="title"></h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
         <ion-item menu-close ng-click="login()">
-          Login
+          <i class="ion-log-in"></i> Մուտք
+        </ion-item>
+        <ion-item menu-close ng-click="login()">
+          <i class="ion-ios-chatboxes"></i> Չատ
         </ion-item>
         <ion-item menu-close href="#/app/search">
-          Search
+          <i class="ion-ios-search-strong"></i>Փնտրել
         </ion-item>
         <ion-item menu-close href="#/app/browse">
-          Browse
+          <i class="ion-ios-cart"></i> Զամբյուղ
         </ion-item>
         <ion-item menu-close href="#/app/categories">
-          Categories
+          <i class="ion-ios-flag"></i> Լեզուներ
         </ion-item>
       </ion-list>
     </ion-content>

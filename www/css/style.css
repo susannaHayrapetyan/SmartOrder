@@ -13,6 +13,16 @@ button{
 	background: #469d72 !important;
 	color: white !important;
 }
+input[type="text"], input[type="password"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: solid 1px #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #C8C6C6;
+  background-color: #E3E3E3;
+}
+
 .back-text > .default-title{
 	display: none !important;
 }
@@ -20,6 +30,11 @@ button{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+.item i{
+	color: #469d72;
+    font-size: 5vh;
+    margin-right: 10px;
 }
 .category-item{
 	display: flex;
