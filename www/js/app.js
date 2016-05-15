@@ -76,6 +76,15 @@ angular.module('smartOrder', [
         controller: 'ItemsCtrl'
       }
     }
+  })
+  .state('app.languages', {
+    url: '/languages',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/languages.html'/*,
+        controller: 'LanguagesCtrl'*/
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/categories');
