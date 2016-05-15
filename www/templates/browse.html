@@ -1,5 +1,31 @@
-<ion-view view-title="Browse">
+<ion-view view-title="Զամբյուղ">
   <ion-content>
-    <h1>Browse</h1>
+    <ion-list>
+        <ion-item class="row-flex">
+        	<div class="col-xs-6 col-sm-6">
+        		<i class="ion-ios-close-empty" style="color: #cf5c25;"></i>
+	         	Կապուչիտա 	
+        	</div>
+	        <div class="col-xs-6 col-sm-6">
+	        	<button ng-click="orderCount=orderCount-1" ng-init="orderCount=1">-</button>
+		    	<span>{{orderCount}}</span>
+		    	<button ng-click="orderCount=orderCount+1">+</button>
+		    	{{orderCount*1400}} Դրամ
+		    </div>
+        </ion-item>
+        <ion-item class="row-flex">
+        	<div class="col-xs-6 col-sm-6">
+        		<i class="ion-ios-close-empty" style="color: #cf5c25;"></i>
+	         	Գլյասսե 	
+        	</div>
+	        <div class="col-xs-6 col-sm-6">
+	        	<button ng-click="orderCount=orderCount-1" ng-init="orderCount=1">-</button>
+		    	<span>{{orderCount}}</span>
+		    	<button ng-click="orderCount=orderCount+1">+</button>
+		    	{{orderCount*1000}} Դրամ
+		    </div>
+        </ion-item>
+      </ion-list>
+      <button style="margin-left: 10px;">Պատվիրել</button>
   </ion-content>
 </ion-view>
